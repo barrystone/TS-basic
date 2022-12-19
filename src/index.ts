@@ -27,3 +27,30 @@ employees = [
 //   [2, 'tony'],
 //   ['not number', 'barry']
 // ];
+
+// Union
+let pid: string | number;
+pid = 'test';
+pid = 1;
+// pid = true;
+
+// Enum
+enum Direction1 {
+  Up = 1,
+  Down,
+  Left,
+  Right
+}
+console.log('Direction 1');
+console.log(Direction1.Up); // get 1
+console.log(Direction1.Left); // get 3
+
+enum Direction2 {
+  Up = 'Up',
+  Down = 'Down',
+  Left = 'Left',
+  Right = 'Right'
+}
+console.log('Direction 2');
+console.log(Direction2.Up); // get 'Up'
+console.log(Direction2.Left); // get 'Left'
