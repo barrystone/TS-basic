@@ -54,3 +54,27 @@ enum Direction2 {
 console.log('Direction 2');
 console.log(Direction2.Up); // get 'Up'
 console.log(Direction2.Left); // get 'Left'
+
+// Objects
+const user1: {
+  id: number;
+  name: string;
+} = {
+  id: 1,
+  name: 'barry'
+};
+
+type UserType = { id: number; name: string };
+const user2: UserType = {
+  id: 1,
+  name: 'barry'
+};
+
+interface UserInterface {
+  id: number;
+  name: string;
+}
+const user3: UserInterface = {
+  id: 2,
+  name: 'stone'
+};

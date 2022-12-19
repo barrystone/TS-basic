@@ -50,3 +50,16 @@ var Direction2;
 console.log('Direction 2');
 console.log(Direction2.Up); // get 'Up'
 console.log(Direction2.Left); // get 'Left'
+// Objects
+const user1 = {
+    id: 1,
+    name: 'barry'
+};
+const user2 = {
+    id: 1,
+    name: 'barry'
+};
+const user3 = {
+    id: 2,
+    name: 'stone'
+};
