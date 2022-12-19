@@ -1,6 +1,11 @@
 "use strict";
 let id = 5;
-// var id = 5;
-// id = '5';
-id = 5;
-console.log('id: ', id);
+let company = 'barrystone';
+let isValidate = false;
+let a = 'good';
+let count;
+// count = 'not number';
+let ids = [1, 2, 3, 4, 5];
+// ids.push('not number');
+// let ids: number[] = [1, 2, 3, 4, 5, false];
+let arr = [1, true, 'test'];
