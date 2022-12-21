@@ -66,7 +66,7 @@ const user1: {
 
 type UserType = { id: number; name: string };
 const user2: UserType = {
-  id: 1,
+  id: 2,
   name: 'barry'
 };
 
@@ -75,7 +75,7 @@ interface UserInterface {
   name: string;
 }
 const user3: UserInterface = {
-  id: 2,
+  id: 3,
   name: 'stone'
 };
 
@@ -101,3 +101,29 @@ function log(message: string | number): void {
 log(1);
 log('test');
 // log(false);
+
+// Interface
+interface UserInterface2 {
+  readonly id: number;
+  name: string;
+  age?: number;
+  // age: number;
+}
+const user4: UserInterface2 = {
+  id: 4,
+  name: 'stone'
+};
+// user4.id =  5;
+user4.name = 'barry';
+
+interface MathFunc {
+  (x: number, y: number): number;
+}
+const add: MathFunc = (x: number, y: number): number => x + y;
+const sub: MathFunc = (x: number, y: number): number => x - y;
+
+// Type and Interface diff
+type Point = number | string;
+// Interface can't use "Union(|)"
+// interface Point = number | string;
+const p1: Point = 1;

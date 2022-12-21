@@ -56,11 +56,11 @@ const user1 = {
     name: 'barry'
 };
 const user2 = {
-    id: 1,
+    id: 2,
     name: 'barry'
 };
 const user3 = {
-    id: 2,
+    id: 3,
     name: 'stone'
 };
 // Type assertion
@@ -82,4 +82,14 @@ function log(message) {
 }
 log(1);
 log('test');
-// log(false);
+const user4 = {
+    id: 4,
+    name: 'stone'
+};
+// user4.id =  5;
+user4.name = 'barry';
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Interface can't use "Union(|)"
+// interface Point = number | string;
+const p1 = 1;
