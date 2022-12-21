@@ -78,3 +78,26 @@ const user3: UserInterface = {
   id: 2,
   name: 'stone'
 };
+
+// Type assertion
+let cid: any = 1;
+// Way 1
+let customerId = <number>cid;
+// Way 2
+// let customerId = cid as number;
+
+// Function
+// if set "noImplicitAny: true", don't neet to set params type
+function addNum(x: number, y: number): number {
+  return x + y;
+}
+console.log(addNum(1, 2));
+// console.log(addNum(1, 'test'));
+
+// Void
+function log(message: string | number): void {
+  console.log(message);
+}
+log(1);
+log('test');
+// log(false);

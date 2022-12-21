@@ -63,3 +63,23 @@ const user3 = {
     id: 2,
     name: 'stone'
 };
+// Type assertion
+let cid = 1;
+// Way 1
+let customerId = cid;
+// Way 2
+// let customerId = cid as number;
+// Function
+// if set "noImplicitAny: true", don't neet to set params type
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(1, 2));
+// console.log(addNum(1, 'test'));
+// Void
+function log(message) {
+    console.log(message);
+}
+log(1);
+log('test');
+// log(false);
