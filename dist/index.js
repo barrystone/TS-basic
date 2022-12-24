@@ -1,4 +1,5 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 let id = 5;
 let company = 'barrystone';
 let isValidate = false;
@@ -123,4 +124,14 @@ console.log(barry.id);
 console.log(barry.register());
 console.log(barry);
 console.log(stone);
+// SubClass
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp1 = new Employee(3, 'Barry', 'Developer');
+console.log(emp1.name, emp1.position);
+console.log(emp1.register());
 console.log('============ ');

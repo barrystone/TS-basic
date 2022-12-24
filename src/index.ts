@@ -1,3 +1,5 @@
+import { convertTypeAcquisitionFromJson, isJSDocThisTag } from 'typescript';
+
 let id: number = 5;
 let company: string = 'barrystone';
 let isValidate: boolean = false;
@@ -172,4 +174,18 @@ console.log(barry.id);
 console.log(barry.register());
 console.log(barry);
 console.log(stone);
+
+// SubClass
+class Employee extends Person {
+  position: string;
+
+  constructor(id: number, name: string, position: string) {
+    super(id, name);
+    this.position = position;
+  }
+}
+
+const emp1 = new Employee(3, 'Barry', 'Developer');
+console.log(emp1.name, emp1.position);
+console.log(emp1.register());
 console.log('============ ');
