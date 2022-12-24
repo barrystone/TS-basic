@@ -135,3 +135,18 @@ const emp1 = new Employee(3, 'Barry', 'Developer');
 console.log(emp1.name, emp1.position);
 console.log(emp1.register());
 console.log('============ ');
+// Generics
+function getArray(items) {
+    return new Array().concat(items);
+    // return [...items]; // SAME RESULTS
+}
+let numArray = getArray([1, 2, 3, 4]);
+let strArray = getArray(['jack', 'jhon', 'james']);
+numArray.push(1);
+// numArray.push('test');
+// strArray.push(1);
+strArray.push('test');
+console.log('==Generics==');
+console.log(numArray);
+console.log(strArray);
+console.log('============ ');
